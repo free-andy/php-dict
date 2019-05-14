@@ -36,7 +36,6 @@ $result = filter_var($var, FILTER_VALIDATE_EMAIL, [
     - [filter](https://www.php.net/manual/zh/filter.filters.php)
 
 - 获取外部变量，并通过过滤器处理它
-- [过滤器](https://www.php.net/manual/zh/filter.filters.php)
 - 成功返回变量值，失败返回 false 或者 null
 
 ```php
