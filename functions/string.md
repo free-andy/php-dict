@@ -28,3 +28,17 @@ $result = htmlentities($str, ENT_COMPAT, 'UTF-8');
 echo $result;
 
 ```
+
+#### str_split
+
+- str_split($string, $split_length)
+- 将字符串切片为数组
+- 返回每个元素均为 split_length 的数组，split_length 小于 1 返回 false
+
+```php
+
+$string = 'aaabbbccc';
+str_split($string, 3); // ['aaa', 'bbb', 'ccc']
+str_split($string, 100); // ['aaabbbccc']
+
+```

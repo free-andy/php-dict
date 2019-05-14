@@ -29,6 +29,39 @@ $result = filter_var($var, FILTER_VALIDATE_EMAIL, [
 
 ```
 
+#### filter_var_array
+
+- filter_var_array($type, $definition, $add_empty)
+- 获取多个变量并且过滤它们
+- 成功则返回一个包含所请求变量的数组，或者当失败时返回 FALSE
+
+```php
+
+$definition = [
+    'foo' => [
+        'fliter' => FILTER_VALIDATE_EMAIL,
+        'flags' => FILTER_FLAG_EMAIL_UNICODE,
+        'options' => [
+            'default' => 'default'
+        ]
+    ],
+    'bar' => [
+        'fliter' => FILTER_VALIDATE_EMAIL,
+        'flags' => FILTER_FLAG_EMAIL_UNICODE,
+        'options' => [
+            'default' => 'default'
+        ]
+    ]
+];
+
+$array = [
+    'foo' => 'xx@qq.com',
+];
+// ['foo' => xx@qq.com, 'bar' => null]
+$result = filter_var_array($array, $definition, true);
+
+```
+
 #### filter_input
 
 - filter_input($type, $var, $filter, $options)
@@ -43,5 +76,36 @@ $result = filter_var($var, FILTER_VALIDATE_EMAIL, [
 // http://app.test?name=free-andy@foxmail.com;
 // return free-andy@foxmail.com
 $result = filter_input(INPUT_GET, 'name', FILTER_VALIDATE_EMAIL)
+
+```
+
+#### filter_input_array
+
+- filter_input_array($type, $definition, $add_empty)
+- 获取一系列外部变量，并且可以通过过滤器处理它们
+- 成功返回一个所请求的变量的数组，失败返回 false
+
+```php
+
+$definition = [
+    'foo' => [
+        'fliter' => FILTER_VALIDATE_EMAIL,
+        'flags' => FILTER_FLAG_EMAIL_UNICODE,
+        'options' => [
+            'default' => 'default'
+        ]
+    ],
+    'bar' => [
+        'fliter' => FILTER_VALIDATE_EMAIL,
+        'flags' => FILTER_FLAG_EMAIL_UNICODE,
+        'options' => [
+            'default' => 'default'
+        ]
+    ]
+];
+
+// curl app.test?foo=xxx@qq.com
+// ['foo' => xx@qq.com, 'bar' => null]
+filter_input_array(INPUT_GET, $definition, true);
 
 ```
