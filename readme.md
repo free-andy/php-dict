@@ -14,7 +14,7 @@
 
 ### 数组函数
 
-- [array_chunk - 在任意进制之间转换数字](functions/array.md#array_chunk)
+- [array_chunk - 将一个数组分割成多个](functions/array.md#array_chunk)
 
 ### 字符串函数
 
