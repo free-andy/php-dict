@@ -14,3 +14,28 @@ $array = ['a', 'b', 'c', 'd'];
 array_chunk($array, 2, false); // [['a', 'b'], ['c', 'd']]
 
 ```
+
+#### array_combine
+
+- array_combine($keys, $values)
+- 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
+- 返回合并的 array，如果两个数组的单元数不同则返回 FALSE
+
+```php
+
+$keys = [
+    'name',
+    'age',
+    'gender'
+];
+
+$values = [
+    'andy',
+    '23',
+    'man'
+];
+
+// ['name' => 'andy', 'age' => 23, 'gender' => 'man']
+$result = array_combine($keys, $values);
+
+```

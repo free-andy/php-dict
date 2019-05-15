@@ -17,3 +17,16 @@ file('./faobar.php')
 file('http://free-andy.cn', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES)
 
 ```
+
+#### ftruncate
+
+- ftruncate($handle, $size)
+- 将文件截断到给定的长度
+- 成功时返回 TRUE， 或者在失败时返回 FALSE
+
+```php
+
+$handle = fopen('./demo/test.php', 'r+');
+$result = ftruncate($handle, 200); // true, ./demo/test.php 被修改稿
+
+```

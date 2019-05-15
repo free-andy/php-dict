@@ -30,3 +30,16 @@ $arg = "-a";
 system('ls '.escapeshellarg($arg));
 
 ```
+
+#### shell_exec
+
+- shell_exec($cmd)
+- 通过 shell 环境执行命令，并且将完整的输出以字符串的方式返回
+- 返回命令执行的输出。 如果执行过程中发生错误或者进程不产生输出，则返回 NULL
+
+```php
+
+// 返回 ls 输出
+$result = shell_exec('ls')
+
+```

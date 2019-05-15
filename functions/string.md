@@ -42,3 +42,17 @@ str_split($string, 3); // ['aaa', 'bbb', 'ccc']
 str_split($string, 100); // ['aaabbbccc']
 
 ```
+
+#### str_shuffle
+
+- str_shuffle($str)
+- 随机打乱一个字符串
+- 返回打乱后的字符串
+
+```php
+
+// 类似：aacbbcacb%
+$str = 'aaabbbccc';
+$result = str_shuffle($str);
+
+```
