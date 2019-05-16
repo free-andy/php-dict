@@ -17,6 +17,7 @@
 
 - [array_chunk - 将一个数组分割成多个](functions/array.md#array_chunk)
 - [array_combine - 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值](functions/array.md#array_combine)
+- [array_key_exists - 检查数组里是否有指定的键名或索引](functions/array.md#array_key_exists)
 
 ### 字符串函数
 

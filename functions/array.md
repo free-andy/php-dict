@@ -39,3 +39,40 @@ $values = [
 $result = array_combine($keys, $values);
 
 ```
+
+#### array_key_exists
+
+- array_key_exists($key, $array)
+- 检查数组里是否有指定的键名或索引
+- 成功时返回 TRUE， 或者在失败时返回 FALSE
+
+```php
+
+$array = [
+    'name' => null,
+    'gender' => '男'
+];
+
+isset($array['name']) // false
+array_key_exists('name', $array) // true
+
+```
+
+#### array_keys
+
+- array_keys($array, $search_value, $strict)
+    - strict 强制匹配 “===”
+
+- 按值搜索数组的键
+- 返回数组中部分的或所有的键名
+
+```php
+
+$data = [
+    'name' => 'andy',
+    'age' => 23
+];
+
+$result = array_keys($data, '23', true); // []
+
+```
