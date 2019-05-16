@@ -76,3 +76,24 @@ $data = [
 $result = array_keys($data, '23', true); // []
 
 ```
+
+#### array_map
+
+- arrray_map($callback, $array1, $arrry2 ...)
+- 为数组的每个元素应用回调函数
+- 返回数组，包含 callback 函数处理之后 array1 的所有元素。
+
+```php
+
+function demo($a, $b)
+{
+    return $a . '=>' . $b;
+}
+
+$a = ['name', 'age', 'gender'];
+$b = ['andy', '23', 'man'];
+
+// ['name' => 'andy', 'age' => '23', 'gender' => 'man']
+$result = array_map('demo', $a, $b);
+
+```
