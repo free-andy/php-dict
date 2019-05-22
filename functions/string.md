@@ -56,3 +56,19 @@ $str = 'aaabbbccc';
 $result = str_shuffle($str);
 
 ```
+
+#### strpos
+
+- strpos($haystack, $needle, $offset)
+- offset 搜索的开始位置，负数会从字符串结尾指定字符数开始
+- 查找字符串首次出现的位置（应该使用的是 `===` 进行判断）
+- 返回 needle 在 haystack 字符串开始的位置，注意字符串位置是从0开始，而不是从1开始的，没找到返回 false
+
+```php
+
+$haystack = 'aabbcc';
+$needle = 'b';
+$result = strpos($haystack, 'a', 1); // 1
+$result = strpos($haystack, 'a', 2); // false
+
+```
