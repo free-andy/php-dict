@@ -27,7 +27,7 @@
 - [htmlentities - 将字符转换为 HTML 转义字符](functions/string.md#htmlentities)
 - [str_split - 将字符串切片为数组](functions/string.md#str_split)
 - [str_shuffle - 随机打乱一个字符串](functions/string.md#str_shuffle)
-- [strpos — 查找字符串首次出现的位置]()
+- [strpos - 查找字符串首次出现的位置](functions/string.md#strpos)
 
 ### 过滤函数
 
