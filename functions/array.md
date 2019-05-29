@@ -97,3 +97,23 @@ $b = ['andy', '23', 'man'];
 $result = array_map('demo', $a, $b);
 
 ```
+
+#### array_reduce
+
+- array_reduce($array, $callback, $init)
+- callback
+    - carry 上次迭代里的值； 如果本次迭代是第一次，那么这个值是 init
+    - item 携带了本次迭代的值
+- 将回调函数 callback 迭代地作用到 array 数组中的每一个单元中，从而将数组简化为单一的值
+
+```php
+
+$arr = [1,2,3,4,5,6];
+
+$result = array_reduce($arr, function ($carry, $item) {
+    return $carry + $item;
+}, 100);
+
+echo $result; // 121
+
+```

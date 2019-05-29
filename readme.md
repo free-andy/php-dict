@@ -20,6 +20,7 @@
 - [array_key_exists - 检查数组里是否有指定的键名或索引](functions/array.md#array_key_exists)
 - [array_keys - 按值搜索数组的键](functions/array.md#array_keys)
 - [array_map - 为数组的每个元素应用回调函数](functions/array.md#array_map)
+- [array_reduce - 用回调函数迭代地将数组简化为单一的值](functions/array.md#array_reduce)
 
 ### 字符串函数
 
