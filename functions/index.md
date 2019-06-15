@@ -5,9 +5,9 @@
 ### [文件系统](#文件系统-1)
 ### [目录处理](#目录处理-1)
 ### [数学](#数学-1)
-### [类/对象](#类/对象-1)
+### [类和对象](#类和对象-1)
 ### [字符类型检测](#字符类型检测-1)
-### [日期/时间](#日期/时间-1)
+### [日期和时间](#日期和时间-1)
 ### [CURL](#CURL-1)
 ### [过滤器](#过滤器-1)
 ### [函数处理](#函数处理-1)
@@ -453,7 +453,7 @@
 - [tan](https://www.php.net/manual/zh/function.tan.php) — 正切
 - [tanh](https://www.php.net/manual/zh/function.tanh.php) — 双曲正切
 
-<h3 id='类/对象'>类/对象</h3>
+<h3 id='类和对象'>类和对象</h3>
 
 - [__autoload](https://www.php.net/manual/zh/function.autoload.php) — 尝试加载未定义的类
 - [call_user_method_array](https://www.php.net/manual/zh/function.call-user-method-array.php) — 以参数列表的数组，调用用户方法
@@ -490,7 +490,7 @@
 - [ctype_upper](https://www.php.net/manual/zh/function.ctype-upper.php) — 做大写字母检测
 - [ctype_xdigit](https://www.php.net/manual/zh/function.ctype-xdigit.php) — 检测字符串是否只包含十六进制字符
 
-<h3 id='日期/时间'>日期/时间</h3>
+<h3 id='日期和时间'>日期和时间</h3>
 
 - [checkdate](https://www.php.net/manual/zh/function.checkdate.php) — 验证一个格里高里日期
 - [date_add](https://www.php.net/manual/zh/function.date-add.php) — 别名 DateTime::add
