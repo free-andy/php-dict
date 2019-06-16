@@ -18,6 +18,10 @@
 ### [错误处理](#错误处理-1)
 ### [输出缓冲控制](#输出缓冲控制-1)
 ### [密码散列算法](#密码散列算法-1)
+### [Session](#Session-1)
+### [JSON](#JSON-1)
+### [Stream](#Stream-1)
+### [SPL](#SPL-1)
 ### [杂项](#杂项-1)
 
 <h3 id='数组'>数组</h3>
@@ -771,6 +775,109 @@
 - [password_hash](https://www.php.net/manual/zh/function.password-hash.php) — 创建密码的散列（hash）
 - [password_needs_rehash](https://www.php.net/manual/zh/function.password-needs-rehash.php) — 检测散列值是否匹配指定的选项
 - [password_verify](https://www.php.net/manual/zh/function.password-verify.php) — 验证密码是否和散列值匹配
+
+<h3 id='Session'>Session</h3>
+
+- [session_abort](https://www.php.net/manual/zh/function.session-abort.php) — Discard session array changes and finish session
+- [session_cache_expire](https://www.php.net/manual/zh/function.session-cache-expire.php) — 返回当前缓存的到期时间
+- [session_cache_limiter](https://www.php.net/manual/zh/function.session-cache-limiter.php) — 读取/设置缓存限制器
+- [session_commit](https://www.php.net/manual/zh/function.session-commit.php) — session_write_close 的别名
+- [session_create_id](https://www.php.net/manual/zh/function.session-create-id.php) — Create new session id
+- [session_decode](https://www.php.net/manual/zh/function.session-decode.php) — 解码会话数据
+- [session_destroy](https://www.php.net/manual/zh/function.session-destroy.php) — 销毁一个会话中的全部数据
+- [session_encode](https://www.php.net/manual/zh/function.session-encode.php) — 将当前会话数据编码为一个字符串
+- [session_gc](https://www.php.net/manual/zh/function.session-gc.php) — Perform session data garbage collection
+- [session_get_cookie_params](https://www.php.net/manual/zh/function.session-get-cookie-params.php) — 获取会话 cookie 参数
+- [session_id](https://www.php.net/manual/zh/function.session-id.php) — 获取/设置当前会话 ID
+- [session_is_registered](https://www.php.net/manual/zh/function.session-is-registered.php) — 检查变量是否在会话中已经注册
+- [session_module_name](https://www.php.net/manual/zh/function.session-module-name.php) — 获取/设置会话模块名称
+- [session_name](https://www.php.net/manual/zh/function.session-name.php) — 读取/设置会话名称
+- [session_regenerate_id](https://www.php.net/manual/zh/function.session-regenerate-id.php) — 使用新生成的会话 ID 更新现有会话 ID
+- [session_register_shutdown](https://www.php.net/manual/zh/function.session-register-shutdown.php) — 关闭会话
+- [session_register](https://www.php.net/manual/zh/function.session-register.php) — Register one or more global variables with the current session
+- [session_reset](https://www.php.net/manual/zh/function.session-reset.php) — Re-initialize session array with original values
+- [session_save_path](https://www.php.net/manual/zh/function.session-save-path.php) — 读取/设置当前会话的保存路径
+- [session_set_cookie_params](https://www.php.net/manual/zh/function.session-set-cookie-params.php) — 设置会话 cookie 参数
+- [session_set_save_handler](https://www.php.net/manual/zh/function.session-set-save-handler.php) — 设置用户自定义会话存储函数
+- [session_start](https://www.php.net/manual/zh/function.session-start.php) — 启动新会话或者重用现有会话
+- [session_status](https://www.php.net/manual/zh/function.session-status.php) — 返回当前会话状态
+- [session_unregister](https://www.php.net/manual/zh/function.session-unregister.php) — Unregister a global variable from the current session
+- [session_unset](https://www.php.net/manual/zh/function.session-unset.php) — 释放所有的会话变量
+- [session_write_close](https://www.php.net/manual/zh/function.session-write-close.php) — Write session data and end session
+
+<h3 id='JSON'>JSON</h3>
+
+- [json_decode](https://www.php.net/manual/zh/function.json-decode.php) — 对 JSON 格式的字符串进行解码
+- [json_encode](https://www.php.net/manual/zh/function.json-encode.php) — 对变量进行 JSON 编码
+- [json_last_error_msg](https://www.php.net/manual/zh/function.json-last-error-msg.php) — Returns the error string of the last json_encode() or json_decode() call
+- [json_last_error](https://www.php.net/manual/zh/function.json-last-error.php) — 返回最后发生的错误
+
+<h3 id='Stream'>Stream</h3>
+
+- [set_socket_blocking](https://www.php.net/manual/zh/function.set-socket-blocking.php) — 别名 stream_set_blocking
+- [stream_bucket_append](https://www.php.net/manual/zh/function.stream-bucket-append.php) — Append bucket to brigade
+- [stream_bucket_make_writeable](https://www.php.net/manual/zh/function.stream-bucket-make-writeable.php) — Return a bucket object from the brigade for operating on
+- [stream_bucket_new](https://www.php.net/manual/zh/function.stream-bucket-new.php) — Create a new bucket for use on the current stream
+- [stream_bucket_prepend](https://www.php.net/manual/zh/function.stream-bucket-prepend.php) — Prepend bucket to brigade
+- [stream_context_create](https://www.php.net/manual/zh/function.stream-context-create.php) — 创建资源流上下文
+- [stream_context_get_default](https://www.php.net/manual/zh/function.stream-context-get-default.php) — Retrieve the default stream context
+- [stream_context_get_options](https://www.php.net/manual/zh/function.stream-context-get-options.php) — 获取资源流/数据包/上下文的参数
+- [stream_context_get_params](https://www.php.net/manual/zh/function.stream-context-get-params.php) — Retrieves parameters from a context
+- [stream_context_set_default](https://www.php.net/manual/zh/function.stream-context-set-default.php) — Set the default stream context
+- [stream_context_set_option](https://www.php.net/manual/zh/function.stream-context-set-option.php) — 对资源流、数据包或者上下文设置参数
+- [stream_context_set_params](https://www.php.net/manual/zh/function.stream-context-set-params.php) — Set parameters for a stream/wrapper/context
+- [stream_copy_to_stream](https://www.php.net/manual/zh/function.stream-copy-to-stream.php) — Copies data from one stream to another
+- [stream_filter_append](https://www.php.net/manual/zh/function.stream-filter-append.php) — Attach a filter to a stream
+- [stream_filter_prepend](https://www.php.net/manual/zh/function.stream-filter-prepend.php) — Attach a filter to a stream
+- [stream_filter_register](https://www.php.net/manual/zh/function.stream-filter-register.php) — Register a user defined stream filter
+- [stream_filter_remove](https://www.php.net/manual/zh/function.stream-filter-remove.php) — 从资源流里移除某个过滤器
+- [stream_get_contents](https://www.php.net/manual/zh/function.stream-get-contents.php) — 读取资源流到一个字符串
+- [stream_get_filters](https://www.php.net/manual/zh/function.stream-get-filters.php) — 获取已注册的数据流过滤器列表
+- [stream_get_line](https://www.php.net/manual/zh/function.stream-get-line.php) — 从资源流里读取一行直到给定的定界符
+- [stream_get_meta_data](https://www.php.net/manual/zh/function.stream-get-meta-data.php) — 从封装协议文件指针中取得报头／元数据
+- [stream_get_transports](https://www.php.net/manual/zh/function.stream-get-transports.php) — 获取已注册的套接字传输协议列表
+- [stream_get_wrappers](https://www.php.net/manual/zh/function.stream-get-wrappers.php) — 获取已注册的流类型
+- [stream_is_local](https://www.php.net/manual/zh/function.stream-is-local.php) — Checks if a stream is a local stream
+- [stream_isatty](https://www.php.net/manual/zh/function.stream-isatty.php) — Check if a stream is a TTY
+- [stream_notification_callback](https://www.php.net/manual/zh/function.stream-notification-callback.php) — A callback function for the notification context parameter
+- [stream_register_wrapper](https://www.php.net/manual/zh/function.stream-register-wrapper.php) — 别名 stream_wrapper_register
+- [stream_resolve_include_path](https://www.php.net/manual/zh/function.stream-resolve-include-path.php) — Resolve filename against the include path
+- [stream_set_blocking](https://www.php.net/manual/zh/function.stream-set-blocking.php) — 为资源流设置阻塞或者阻塞模式
+- [stream_set_chunk_size](https://www.php.net/manual/zh/function.stream-set-chunk-size.php) — 设置资源流区块大小
+- [stream_set_read_buffer](https://www.php.net/manual/zh/function.stream-set-read-buffer.php) — Set read file buffering on the given stream
+- [stream_set_timeout](https://www.php.net/manual/zh/function.stream-set-timeout.php) — Set timeout period on a stream
+- [stream_set_write_buffer](https://www.php.net/manual/zh/function.stream-set-write-buffer.php) — Sets write file buffering on the given stream
+- [stream_socket_accept](https://www.php.net/manual/zh/function.stream-socket-accept.php) — 接受由 stream_socket_server 创建的套接字连接
+- [stream_socket_client](https://www.php.net/manual/zh/function.stream-socket-client.php) — Open Internet or Unix domain socket connection
+- [stream_socket_enable_crypto](https://www.php.net/manual/zh/function.stream-socket-enable-crypto.php) — Turns encryption on/off on an already connected socket
+- [stream_socket_get_name](https://www.php.net/manual/zh/function.stream-socket-get-name.php) — 获取本地或者远程的套接字名称
+- [stream_socket_pair](https://www.php.net/manual/zh/function.stream-socket-pair.php) — 创建一对完全一样的网络套接字连接流
+- [stream_socket_recvfrom](https://www.php.net/manual/zh/function.stream-socket-recvfrom.php) — Receives data from a socket, connected or not
+- [stream_socket_sendto](https://www.php.net/manual/zh/function.stream-socket-sendto.php) — Sends a message to a socket, whether it is connected or not
+- [stream_socket_server](https://www.php.net/manual/zh/function.stream-socket-server.php) — Create an Internet or Unix domain server socket
+- [stream_socket_shutdown](https://www.php.net/manual/zh/function.stream-socket-shutdown.php) — Shutdown a full-duplex connection
+- [stream_supports_lock](https://www.php.net/manual/zh/function.stream-supports-lock.php) — Tells whether the stream supports locking
+- [stream_wrapper_register](https://www.php.net/manual/zh/function.stream-wrapper-register.php) — 注册一个用 PHP 类实现的 URL 封装协议
+- [stream_wrapper_restore](https://www.php.net/manual/zh/function.stream-wrapper-restore.php) — Restores a previously unregistered built-in wrapper
+- [stream_wrapper_unregister](https://www.php.net/manual/zh/function.stream-wrapper-unregister.php) — Unregister a URL wrapper
+
+<h3 id='SPL'>SPL</h3>
+
+- [class_implements](https://www.php.net/manual/zh/function.class-implements.php) — 返回指定的类实现的所有接口。
+- [class_parents](https://www.php.net/manual/zh/function.class-parents.php) — 返回指定类的父类。
+- [class_uses](https://www.php.net/manual/zh/function.class-uses.php) — Return the traits used by the given class
+- [iterator_apply](https://www.php.net/manual/zh/function.iterator-apply.php) — 为迭代器中每个元素调用一个用户自定义函数
+- [iterator_count](https://www.php.net/manual/zh/function.iterator-count.php) — 计算迭代器中元素的个数
+- [iterator_to_array](https://www.php.net/manual/zh/function.iterator-to-array.php) — 将迭代器中的元素拷贝到数组
+- [spl_autoload_call](https://www.php.net/manual/zh/function.spl-autoload-call.php) — 尝试调用所有已注册的__autoload()函数来装载请求类
+- [spl_autoload_extensions](https://www.php.net/manual/zh/function.spl-autoload-extensions.php) — 注册并返回spl_autoload函数使用的默认文件扩展名。
+- [spl_autoload_functions](https://www.php.net/manual/zh/function.spl-autoload-functions.php) — 返回所有已注册的__autoload()函数。
+- [spl_autoload_register](https://www.php.net/manual/zh/function.spl-autoload-register.php) — 注册给定的函数作为 __autoload 的实现
+- [spl_autoload_unregister](https://www.php.net/manual/zh/function.spl-autoload-unregister.php) — 注销已注册的__autoload()函数
+- [spl_autoload](https://www.php.net/manual/zh/function.spl-autoload.php) — __autoload()函数的默认实现
+- [spl_classes](https://www.php.net/manual/zh/function.spl-classes.php) — 返回所有可用的SPL类
+- [spl_object_hash](https://www.php.net/manual/zh/function.spl-object-hash.php) — 返回指定对象的hash id
+- [spl_object_id](https://www.php.net/manual/zh/function.spl-object-id.php) — Return the integer object handle for given object
 
 <h3 id='杂项'>杂项</h3>
 

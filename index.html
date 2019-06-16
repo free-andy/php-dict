@@ -62,6 +62,10 @@
 <p><a href='#错误处理'>错误处理</a></p>
 <p><a href='#输出缓冲控制'>输出缓冲控制</a></p>
 <p><a href='#密码散列算法'>密码散列算法</a></p>
+<p><a href='#Session'>Session</a></p>
+<p><a href='#JSON'>JSON</a></p>
+<p><a href='#Stream'>Stream</a></p>
+<p><a href='#SPL'>SPL</a></p>
 <p><a href='#杂项'>杂项</a></p>
     </div>
     <div class="content">
@@ -777,6 +781,101 @@
 <p><a target='_blank' href='https://www.php.net/manual/zh/function.password-hash.php'>password_hash</a> — 创建密码的散列（hash）<p>
 <p><a target='_blank' href='https://www.php.net/manual/zh/function.password-needs-rehash.php'>password_needs_rehash</a> — 检测散列值是否匹配指定的选项<p>
 <p><a target='_blank' href='https://www.php.net/manual/zh/function.password-verify.php'>password_verify</a> — 验证密码是否和散列值匹配<p>
+<br/><h2 id='Session'>Session</h2><br/>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-abort.php'>session_abort</a> — Discard session array changes and finish session<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-cache-expire.php'>session_cache_expire</a> — 返回当前缓存的到期时间<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-cache-limiter.php'>session_cache_limiter</a> — 读取/设置缓存限制器<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-commit.php'>session_commit</a> — session_write_close 的别名<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-create-id.php'>session_create_id</a> — Create new session id<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-decode.php'>session_decode</a> — 解码会话数据<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-destroy.php'>session_destroy</a> — 销毁一个会话中的全部数据<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-encode.php'>session_encode</a> — 将当前会话数据编码为一个字符串<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-gc.php'>session_gc</a> — Perform session data garbage collection<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-get-cookie-params.php'>session_get_cookie_params</a> — 获取会话 cookie 参数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-id.php'>session_id</a> — 获取/设置当前会话 ID<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-is-registered.php'>session_is_registered</a> — 检查变量是否在会话中已经注册<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-module-name.php'>session_module_name</a> — 获取/设置会话模块名称<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-name.php'>session_name</a> — 读取/设置会话名称<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-regenerate-id.php'>session_regenerate_id</a> — 使用新生成的会话 ID 更新现有会话 ID<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-register-shutdown.php'>session_register_shutdown</a> — 关闭会话<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-register.php'>session_register</a> — Register one or more global variables with the current session<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-reset.php'>session_reset</a> — Re-initialize session array with original values<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-save-path.php'>session_save_path</a> — 读取/设置当前会话的保存路径<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-set-cookie-params.php'>session_set_cookie_params</a> — 设置会话 cookie 参数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-set-save-handler.php'>session_set_save_handler</a> — 设置用户自定义会话存储函数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-start.php'>session_start</a> — 启动新会话或者重用现有会话<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-status.php'>session_status</a> — 返回当前会话状态<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-unregister.php'>session_unregister</a> — Unregister a global variable from the current session<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-unset.php'>session_unset</a> — 释放所有的会话变量<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.session-write-close.php'>session_write_close</a> — Write session data and end session<p>
+<br/><h2 id='JSON'>JSON</h2><br/>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.json-decode.php'>json_decode</a> — 对 JSON 格式的字符串进行解码<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.json-encode.php'>json_encode</a> — 对变量进行 JSON 编码<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.json-last-error-msg.php'>json_last_error_msg</a> — Returns the error string of the last json_encode() or json_decode() call<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.json-last-error.php'>json_last_error</a> — 返回最后发生的错误<p>
+<br/><h2 id='Stream'>Stream</h2><br/>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.set-socket-blocking.php'>set_socket_blocking</a> — 别名 stream_set_blocking<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-bucket-append.php'>stream_bucket_append</a> — Append bucket to brigade<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-bucket-make-writeable.php'>stream_bucket_make_writeable</a> — Return a bucket object from the brigade for operating on<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-bucket-new.php'>stream_bucket_new</a> — Create a new bucket for use on the current stream<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-bucket-prepend.php'>stream_bucket_prepend</a> — Prepend bucket to brigade<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-context-create.php'>stream_context_create</a> — 创建资源流上下文<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-context-get-default.php'>stream_context_get_default</a> — Retrieve the default stream context<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-context-get-options.php'>stream_context_get_options</a> — 获取资源流/数据包/上下文的参数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-context-get-params.php'>stream_context_get_params</a> — Retrieves parameters from a context<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-context-set-default.php'>stream_context_set_default</a> — Set the default stream context<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-context-set-option.php'>stream_context_set_option</a> — 对资源流、数据包或者上下文设置参数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-context-set-params.php'>stream_context_set_params</a> — Set parameters for a stream/wrapper/context<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-copy-to-stream.php'>stream_copy_to_stream</a> — Copies data from one stream to another<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-filter-append.php'>stream_filter_append</a> — Attach a filter to a stream<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-filter-prepend.php'>stream_filter_prepend</a> — Attach a filter to a stream<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-filter-register.php'>stream_filter_register</a> — Register a user defined stream filter<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-filter-remove.php'>stream_filter_remove</a> — 从资源流里移除某个过滤器<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-get-contents.php'>stream_get_contents</a> — 读取资源流到一个字符串<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-get-filters.php'>stream_get_filters</a> — 获取已注册的数据流过滤器列表<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-get-line.php'>stream_get_line</a> — 从资源流里读取一行直到给定的定界符<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-get-meta-data.php'>stream_get_meta_data</a> — 从封装协议文件指针中取得报头／元数据<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-get-transports.php'>stream_get_transports</a> — 获取已注册的套接字传输协议列表<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-get-wrappers.php'>stream_get_wrappers</a> — 获取已注册的流类型<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-is-local.php'>stream_is_local</a> — Checks if a stream is a local stream<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-isatty.php'>stream_isatty</a> — Check if a stream is a TTY<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-notification-callback.php'>stream_notification_callback</a> — A callback function for the notification context parameter<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-register-wrapper.php'>stream_register_wrapper</a> — 别名 stream_wrapper_register<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-resolve-include-path.php'>stream_resolve_include_path</a> — Resolve filename against the include path<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-set-blocking.php'>stream_set_blocking</a> — 为资源流设置阻塞或者阻塞模式<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-set-chunk-size.php'>stream_set_chunk_size</a> — 设置资源流区块大小<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-set-read-buffer.php'>stream_set_read_buffer</a> — Set read file buffering on the given stream<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-set-timeout.php'>stream_set_timeout</a> — Set timeout period on a stream<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-set-write-buffer.php'>stream_set_write_buffer</a> — Sets write file buffering on the given stream<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-accept.php'>stream_socket_accept</a> — 接受由 stream_socket_server 创建的套接字连接<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-client.php'>stream_socket_client</a> — Open Internet or Unix domain socket connection<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-enable-crypto.php'>stream_socket_enable_crypto</a> — Turns encryption on/off on an already connected socket<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-get-name.php'>stream_socket_get_name</a> — 获取本地或者远程的套接字名称<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-pair.php'>stream_socket_pair</a> — 创建一对完全一样的网络套接字连接流<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-recvfrom.php'>stream_socket_recvfrom</a> — Receives data from a socket, connected or not<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-sendto.php'>stream_socket_sendto</a> — Sends a message to a socket, whether it is connected or not<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-server.php'>stream_socket_server</a> — Create an Internet or Unix domain server socket<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-socket-shutdown.php'>stream_socket_shutdown</a> — Shutdown a full-duplex connection<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-supports-lock.php'>stream_supports_lock</a> — Tells whether the stream supports locking<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-wrapper-register.php'>stream_wrapper_register</a> — 注册一个用 PHP 类实现的 URL 封装协议<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-wrapper-restore.php'>stream_wrapper_restore</a> — Restores a previously unregistered built-in wrapper<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.stream-wrapper-unregister.php'>stream_wrapper_unregister</a> — Unregister a URL wrapper<p>
+<br/><h2 id='SPL'>SPL</h2><br/>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.class-implements.php'>class_implements</a> — 返回指定的类实现的所有接口。<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.class-parents.php'>class_parents</a> — 返回指定类的父类。<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.class-uses.php'>class_uses</a> — Return the traits used by the given class<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.iterator-apply.php'>iterator_apply</a> — 为迭代器中每个元素调用一个用户自定义函数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.iterator-count.php'>iterator_count</a> — 计算迭代器中元素的个数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.iterator-to-array.php'>iterator_to_array</a> — 将迭代器中的元素拷贝到数组<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-autoload-call.php'>spl_autoload_call</a> — 尝试调用所有已注册的__autoload()函数来装载请求类<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-autoload-extensions.php'>spl_autoload_extensions</a> — 注册并返回spl_autoload函数使用的默认文件扩展名。<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-autoload-functions.php'>spl_autoload_functions</a> — 返回所有已注册的__autoload()函数。<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-autoload-register.php'>spl_autoload_register</a> — 注册给定的函数作为 __autoload 的实现<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-autoload-unregister.php'>spl_autoload_unregister</a> — 注销已注册的__autoload()函数<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-autoload.php'>spl_autoload</a> — __autoload()函数的默认实现<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-classes.php'>spl_classes</a> — 返回所有可用的SPL类<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-object-hash.php'>spl_object_hash</a> — 返回指定对象的hash id<p>
+<p><a target='_blank' href='https://www.php.net/manual/zh/function.spl-object-id.php'>spl_object_id</a> — Return the integer object handle for given object<p>
 <br/><h2 id='杂项'>杂项</h2><br/>
 <p><a target='_blank' href='https://www.php.net/manual/zh/function.connection-aborted.php'>connection_aborted</a> — 检查客户端是否已经断开<p>
 <p><a target='_blank' href='https://www.php.net/manual/zh/function.connection-status.php'>connection_status</a> — 返回连接的状态位<p>
