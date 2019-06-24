@@ -22,6 +22,7 @@
 ### [JSON](#JSON-1)
 ### [Stream](#Stream-1)
 ### [SPL](#SPL-1)
+### [BCMath](#BCMath-1)
 ### [杂项](#杂项-1)
 
 <h3 id='数组'>数组</h3>
@@ -878,6 +879,19 @@
 - [spl_classes](https://www.php.net/manual/zh/function.spl-classes.php) — 返回所有可用的SPL类
 - [spl_object_hash](https://www.php.net/manual/zh/function.spl-object-hash.php) — 返回指定对象的hash id
 - [spl_object_id](https://www.php.net/manual/zh/function.spl-object-id.php) — Return the integer object handle for given object
+
+<h3 id='BCMath'>BCMath</h3>
+
+- [bcadd](https://www.php.net/manual/zh/function.bcadd.php) — 2个任意精度数字的加法计算
+- [bccomp](https://www.php.net/manual/zh/function.bccomp.php) — 比较两个任意精度的数字
+- [bcdiv](https://www.php.net/manual/zh/function.bcdiv.php) — 2个任意精度的数字除法计算
+- [bcmod](https://www.php.net/manual/zh/function.bcmod.php) — 对一个任意精度数字取模
+- [bcmul](https://www.php.net/manual/zh/function.bcmul.php) — 2个任意精度数字乘法计算
+- [bcpow](https://www.php.net/manual/zh/function.bcpow.php) — 任意精度数字的乘方
+- [bcpowmod](https://www.php.net/manual/zh/function.bcpowmod.php) — Raise an arbitrary precision number to another, reduced by a specified modulus
+- [bcscale](https://www.php.net/manual/zh/function.bcscale.php) — 设置所有bc数学函数的默认小数点保留位数
+- [bcsqrt](https://www.php.net/manual/zh/function.bcsqrt.php) — 任意精度数字的二次方根
+- [bcsub](https://www.php.net/manual/zh/function.bcsub.php) — 2个任意精度数字的减法
 
 <h3 id='杂项'>杂项</h3>
 
