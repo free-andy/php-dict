@@ -1,11 +1,7 @@
 
-### 一个 phper 的速查表
+### php 函数速查表
 
-> 历史版本移动到了 [bak 分支](https://github.com/free-andy/php-dict/tree/bak) 
-
-- [查看 MD](functions/index.md)
-
-### License
+- [https://php-dict.iddahe.com](https://php-dict.iddahe.com)
 
 > 尊重他人劳动成果，使用请著名出处。
 
